@@ -58,7 +58,7 @@ function find_friends(user, patients) {
 }
 
 var similars = find_friends(swag, patients)
-document.write(similars[0].name);
+
 function sortFriends() {
     similars.sort(function(a, b){return a.c_l - b.c_l});
 }
