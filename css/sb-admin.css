@@ -11,7 +11,46 @@ html {
 
 body {
   height: 100%;
+  color: white;
 }
+
+.profile-construction {
+  background-color: #5863F8;
+}
+
+.profile-construction-title {
+  text-align: center;
+  margin: 100px 0px 0px 0px;
+}
+
+.profile-construction-subtitle {
+  text-align: center;
+  padding: 20px 0px 20px 0px;
+}
+
+.step-number-profile-construction {
+  font-size: 800px;
+  text-align: center;
+  position: fixed;
+  left: 0px;
+  right: 0px;
+  top: 40px;
+  opacity: 0.15;
+  padding: 0px;
+}
+
+.interests-row {
+  margin: 30px 10px;
+  color: #171D1C;
+}
+
+.interests-card {
+  padding: 40px;
+}
+
+/*.card-name {
+  text-decoration: none;
+}*/
 
 #wrapper {
   display: -webkit-box;
@@ -84,6 +123,11 @@ body.fixed-nav.sidebar-toggled #content-wrapper {
 .z-1 {
   z-index: 1;
 }
+
+.navbar {
+  background-color: #171D1C;
+}
+
 
 .navbar-nav .form-inline .input-group {
   width: 100%;
