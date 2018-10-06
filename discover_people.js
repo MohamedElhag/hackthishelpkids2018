@@ -1,11 +1,11 @@
-var patients = new array();
+var patients = [];
 
 var curr_name = "Mohamed";
 var curr_user = "swag";
 var curr_pass = "nvembu";
 var curr_nick = "iHaveAsthma";
 var curr_age = 10;
-var curr_ints = new array("Soccer", "Dancing", "Fortnite");
+var curr_ints = ["Soccer", "Dancing", "Fortnite"];
 var curr_pic = "none.jpg"
 
 function Demo_Person (f_name, l_name, user, pass, nick, age, ints, pic, med_id) {
@@ -28,28 +28,42 @@ function Patient (f_name, l_name, user, pass, nick, age, ints, pic, med_id) {
   this.age = age;
   this.ints = ints;
   this.pic = pic;
-  this.med_id = med_id
+  this.med_id = med_id;
 }
 
-var Us = new Patient(curr_name, curr_name, curr_user, curr_pass, curr_nick, curr_age, curr_ints, curr_pic, 1122332);
+var swag = new Patient(curr_name, curr_name, curr_user, curr_pass, curr_nick, curr_age, curr_ints, curr_pic, 1122332);
 
-patients.push(new Patient("Navya", "Kalale", "nva", "cscscs", "nav", 12, ["Soccer", "Art", "Fortnite", "fubol"], "hoes.jpg"));
+
+var Navya = new Patient("Navya", "Kalale", "nva", "cscscs", "nav", 12, ["Soccer", "Art", "Fortnite", "fubol"], "hoes.jpg");
+
+var Monica = new Patient("Monica", "Chang", "mchang", "fuzzybear", "Mon", 10, ["History","Dancing","Fortnite"], "itME.jpg")
+
+var Nikhila = new Patient("Nikhila", "Vembu", "nvembu", "puppies", "Tequila", 12, ["Piano","Memes","Math"], "sos.jpg");
+
+var Aldrich = new Patient("Aldrich", "Ronquillo", "alpal", "liveluvCS", "Buzz", 7, ["Piano","Math","History"], "yikes.jpg");
+
+
+
+patients.push(Navya);
+
 
 function compare(user, patient) {
-  var common = new array();
-  var j = 0;
-  for (j; j < Us.ints.length; j++) {
-    if (patient.ints.includes(Us.ints[i])) {
-      common.push(Us.ints[i]);
+  var common = [];
+  var p_interests = patient.ints;
+
+  var j;
+  for (j = 0; j < user.ints.length; j++) {
+    if (p_interests.includes(user.ints[j])) {
+      common.push(user.ints[j]);
       }
     }
-  return {name: patient.name, common: common, c_l: common.length);
+  return {name: patient.name, common: common, c_l: common.length};
 }
 
 function find_friends(user, patients) {
-  var i = 0;
-  var friends = new array();
-  for (i; i < patients.length; i++){
+  var i;
+  var friends = [];
+  for (i=0; i < patients.length; i++){
     var patient = patients[i];
     var yeet = compare(user, patient);
     friends.push(yeet);
@@ -57,8 +71,8 @@ function find_friends(user, patients) {
   return friends;
 }
 
-var similars = find_friends(Us, patients)
-
-function myFunction() {
+var similars = find_friends(swag, patients)
+document.write(similars[0].name);
+function sortFriends() {
     similars.sort(function(a, b){return a.c_l - b.c_l});
 }
