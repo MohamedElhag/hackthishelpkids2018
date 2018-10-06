@@ -3,57 +3,17 @@
 <head>
 <script>
 
-var interests = [];
+var interests = ["Soccer"];
 
 document.getElementById("demo").innerHTML = interests;
 
-function addDancing() {
-	interests.push("Dancing");
-    document.getElementById("demo").innerHTML = interests
+function addArts() {
+	interests.push("Arts");
+    document.getElementById("demo").innerHTML = interests;
 }
 function addFortnite() {
 	interests.push("Fortnite");
-    document.getElementById("demo").innerHTML = interests
-}
-function addPiano() {
-	interests.push("Piano");
-    document.getElementById("demo").innerHTML = interests
-}
-function addSoccer() {
-	interests.push("Soccer");
-    document.getElementById("demo").innerHTML = interests
-}
-function addBasketball() {
-	interests.push("Basketball");
-    document.getElementById("demo").innerHTML = interests
-}
-function addFootball() {
-	interests.push("Football");
-    document.getElementById("demo").innerHTML = interests
-}
-function addMemes() {
-	interests.push("Memes");
-    document.getElementById("demo").innerHTML = interests
-}
-function addMath() {
-	interests.push("Math");
-    document.getElementById("demo").innerHTML = interests
-}
-function addDrawing() {
-	interests.push("Drawing");
-    document.getElementById("demo").innerHTML = interests
-}
-function addDogspotting() {
-	interests.push("Dogspotting");
-    document.getElementById("demo").innerHTML = interests
-}
-function addReading() {
-	interests.push("Reading");
-    document.getElementById("demo").innerHTML = interests
-}
-function addHistory() {
-	interests.push("History");
-    document.getElementById("demo").innerHTML = interests
+    document.getElementById("demo").innerHTML = interests;
 }
 
 </script>
@@ -65,19 +25,8 @@ function addHistory() {
 
 <p id="demo">A Paragraph.</p>
 
-<button type="button" onclick="addDancing()">Dancing</button>
+<button type="button" onclick="addArts()">Arts</button>
 <button type="button" onclick="addFortnite()">Fortnite</button>
-<button type="button" onclick="addPiano()">Piano</button>
-<button type="button" onclick="addSoccer()">Soccer</button>
-<button type="button" onclick="addBasketball()">Basketball</button>
-<button type="button" onclick="addFootball()">Football</button>
-<button type="button" onclick="addMemes()">Memes</button>
-<button type="button" onclick="addMath()">Math</button>
-<button type="button" onclick="addDrawing()">Drawing</button>
-<button type="button" onclick="addDogspotting()">Dogspotting</button>
-<button type="button" onclick="addReading()">Reading</button>
-<button type="button" onclick="addHistory()">History</button>
-
 
 </body>
 </html>
