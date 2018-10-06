@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+
+var interests = ["Soccer"]
+
+document.getElementById("demo").innerHTML = interests;
+
+function addArts() {
+	interests.push("Arts");
+    document.getElementById("demo").innerHTML = interests
+}
+function addFortnite() {
+	interests.push("Fortnite");
+    document.getElementById("demo").innerHTML = interests
+}
+
+</script>
+</head>
+
+<body>
+
+<h2>JavaScript in Head</h2>
+
+<p id="demo">A Paragraph.</p>
+
+<button type="button" onclick="addArts()">Arts</button>
+<button type="button" onclick="addFortnite()">Fortnite</button>
+
+</body>
+</html> 
