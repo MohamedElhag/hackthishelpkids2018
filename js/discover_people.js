@@ -1,4 +1,5 @@
-var patients = [];
+localStorage.setItem('pl', JSON.stringify([]));
+var patients = JSON.parse(localStorage.getItem('pl'))
 
 var curr_name = "Mohamed";
 var curr_user = "swag";
@@ -114,4 +115,21 @@ function search_patients(name) {
     }
   }
   return 0;
+}
+
+################################################################################################################
+
+//login
+function submit(){
+  console.log("submitted & saved");
+  curr_name = $("inputName").val();
+  curr_medId = $("inputMedicalID").val();
+  curr_user = $("inputUsername").val();
+  curr_pass = $("inputPassword").val();
+  curr_age = parseInt($("inputAge").val(), 10);
+  var pl = localStorage.getItem("patientsList");
+  console.log(pl);
+  //pl.push(new Patient(curr_name, "", curr_user, curr_pass, curr_age, [], "", curr_medId));
+  localStorage.setItem("patientsList", pl);
+  console.log(pl);
 }
