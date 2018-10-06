@@ -86,7 +86,7 @@
     <div class="row justify-content-center">
       <div class="col-4">
         <h2 class="profile-construction-title">YOUR PROFILE</h2>
-        <h4 class="profile-construction-subtitle">3. Profile Picture</h4>
+        <h4 class="profile-construction-subtitle">3. Upload Photo</h4>
       </div>
     </div>
     
@@ -94,30 +94,16 @@
     <div class="row justify-content-center">
       <div class="col-4">
         <form>
-          <div class="form-group">
-            <label for="exampleInputEmail1">Nickname</label>
-            <input type="nickname" class="form-control" id="exampleInputNickname" aria-describedby="nicknameHelp" placeholder="">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputAge">Age</label>
-            <input type="age" class="form-control" id="exampleInputAge" placeholder="">
-          </div>
-          <div class="form-group">
-            <label for="exampleInputHospital">Hospital</label>
-            <input type="hospital" class="form-control" id="exampleInputHospital" aria-describedby="hospitalHelp" placeholder="">
-          </div>
-
+            <input class="upload-button" type="file" name="pic" accept="image/*" style="background-color: white; color: black;">
+<!--             <input type="submit"> -->
           <!-- <button type="submit" class="btn btn-dark float-right">Next</button> -->
+          <img src="images/profile_placeholder.png" class="rounded-circle propic-upload" alt="Profile Pic">
           <a href="profile_interests.html" class="submit-profile-basics btn btn-outline-light float-right" role="button">NEXT</a>
           </form>
         </div>
       </div>
 
-      <div class="row justify-content-center interests-row">
-        <div class="col-9">
-          <a href="profile_picture.html" class="submit-profile-basics btn btn-outline-light float-right" role="button">NEXT</a>
-        </div>
-      </div>
+
 
 
           <!-- <button type="submit" class="btn btn-dark float-right">Next</button> -->
